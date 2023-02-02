@@ -2511,7 +2511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd97de2080935b449753f681298968b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 685824b9301e65746955c25a211d9333, type: 3}
+  clip: {fileID: 8300000, guid: 9305917d5a3cf584dbc1ecc6b6a4f075, type: 3}
   targetTag: drumstick
 --- !u!1 &707624613
 GameObject:

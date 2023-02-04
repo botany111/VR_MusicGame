@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2973197404038232812}
   m_Layer: 0
   m_Name: HH(open)
-  m_TagString: bass drum
+  m_TagString: HH(open)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

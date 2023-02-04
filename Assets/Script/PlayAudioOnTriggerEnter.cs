@@ -23,4 +23,16 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
         Debug.Log("trigger");
     }
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            if (Hit.snareDrum)
+            {
+                Destroy(Hit.GsnareDrum);
+            }
+        }
+    }
 }

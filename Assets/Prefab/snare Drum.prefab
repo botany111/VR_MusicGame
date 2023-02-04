@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8692787127395451108}
   m_Layer: 0
   m_Name: snare Drum
-  m_TagString: bass drum
+  m_TagString: snare drum
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

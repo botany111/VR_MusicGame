@@ -7,6 +7,14 @@ TagManager:
   - drumstick
   - bass drum
   - snare drum
+  - crash
+  - floor tom
+  - HH(close)
+  - HH(open)
+  - ride
+  - snare Drum
+  - tom-1
+  - tom-2
   layers:
   - Default
   - TransparentFX

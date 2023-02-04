@@ -23,7 +23,4 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
         Debug.Log("trigger");
     }
-
-    
-
 }

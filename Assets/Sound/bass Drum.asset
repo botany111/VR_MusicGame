@@ -14,14 +14,172 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: bass Drum
   mEventList:
-  - mStartSample: 416500
-    mEndSample: 416500
   - mStartSample: 441000
     mEndSample: 441000
-  - mStartSample: 465500
-    mEndSample: 465500
-  - mStartSample: 490000
-    mEndSample: 490000
+  - mStartSample: 466941
+    mEndSample: 466941
+  - mStartSample: 492882
+    mEndSample: 492882
+  - mStartSample: 518823
+    mEndSample: 518823
+  - mStartSample: 544764
+    mEndSample: 544764
+  - mStartSample: 570705
+    mEndSample: 570705
+  - mStartSample: 596647
+    mEndSample: 596647
+  - mStartSample: 622588
+    mEndSample: 622588
+  - mStartSample: 648529
+    mEndSample: 648529
+  - mStartSample: 674470
+    mEndSample: 674470
+  - mStartSample: 700411
+    mEndSample: 700411
+  - mStartSample: 726352
+    mEndSample: 726352
+  - mStartSample: 752294
+    mEndSample: 752294
+  - mStartSample: 778235
+    mEndSample: 778235
+  - mStartSample: 804176
+    mEndSample: 804176
+  - mStartSample: 830117
+    mEndSample: 830117
+  - mStartSample: 856058
+    mEndSample: 856058
+  - mStartSample: 882000
+    mEndSample: 882000
+  - mStartSample: 907941
+    mEndSample: 907941
+  - mStartSample: 933882
+    mEndSample: 933882
+  - mStartSample: 959823
+    mEndSample: 959823
+  - mStartSample: 985764
+    mEndSample: 985764
+  - mStartSample: 1011705
+    mEndSample: 1011705
+  - mStartSample: 1037647
+    mEndSample: 1037647
+  - mStartSample: 1063588
+    mEndSample: 1063588
+  - mStartSample: 1089530
+    mEndSample: 1089530
+  - mStartSample: 1115471
+    mEndSample: 1115471
+  - mStartSample: 1141412
+    mEndSample: 1141412
+  - mStartSample: 1167353
+    mEndSample: 1167353
+  - mStartSample: 1193294
+    mEndSample: 1193294
+  - mStartSample: 1219235
+    mEndSample: 1219235
+  - mStartSample: 1245177
+    mEndSample: 1245177
+  - mStartSample: 1271117
+    mEndSample: 1271117
+  - mStartSample: 1297059
+    mEndSample: 1297059
+  - mStartSample: 1323000
+    mEndSample: 1323000
+  - mStartSample: 1348941
+    mEndSample: 1348941
+  - mStartSample: 1374882
+    mEndSample: 1374882
+  - mStartSample: 1400823
+    mEndSample: 1400823
+  - mStartSample: 1426764
+    mEndSample: 1426764
+  - mStartSample: 1452706
+    mEndSample: 1452706
+  - mStartSample: 1478647
+    mEndSample: 1478647
+  - mStartSample: 1504589
+    mEndSample: 1504589
+  - mStartSample: 1530530
+    mEndSample: 1530530
+  - mStartSample: 1556471
+    mEndSample: 1556471
+  - mStartSample: 1582412
+    mEndSample: 1582412
+  - mStartSample: 1608353
+    mEndSample: 1608353
+  - mStartSample: 1634294
+    mEndSample: 1634294
+  - mStartSample: 1660236
+    mEndSample: 1660236
+  - mStartSample: 1686176
+    mEndSample: 1686176
+  - mStartSample: 1712118
+    mEndSample: 1712118
+  - mStartSample: 1738059
+    mEndSample: 1738059
+  - mStartSample: 1764000
+    mEndSample: 1764000
+  - mStartSample: 1789941
+    mEndSample: 1789941
+  - mStartSample: 1815882
+    mEndSample: 1815882
+  - mStartSample: 1841823
+    mEndSample: 1841823
+  - mStartSample: 1867765
+    mEndSample: 1867765
+  - mStartSample: 1893705
+    mEndSample: 1893705
+  - mStartSample: 1919647
+    mEndSample: 1919647
+  - mStartSample: 1945588
+    mEndSample: 1945588
+  - mStartSample: 1971529
+    mEndSample: 1971529
+  - mStartSample: 1997470
+    mEndSample: 1997470
+  - mStartSample: 2023411
+    mEndSample: 2023411
+  - mStartSample: 2049352
+    mEndSample: 2049352
+  - mStartSample: 2075294
+    mEndSample: 2075294
+  - mStartSample: 2101235
+    mEndSample: 2101235
+  - mStartSample: 2127177
+    mEndSample: 2127177
+  - mStartSample: 2153118
+    mEndSample: 2153118
+  - mStartSample: 2179059
+    mEndSample: 2179059
+  - mStartSample: 2205000
+    mEndSample: 2205000
+  - mStartSample: 2230941
+    mEndSample: 2230941
+  - mStartSample: 2256882
+    mEndSample: 2256882
+  - mStartSample: 2282824
+    mEndSample: 2282824
+  - mStartSample: 2308764
+    mEndSample: 2308764
+  - mStartSample: 2308765
+    mEndSample: 2308765
+  - mStartSample: 2334706
+    mEndSample: 2334706
+  - mStartSample: 2360647
+    mEndSample: 2360647
+  - mStartSample: 2386588
+    mEndSample: 2386588
+  - mStartSample: 2412529
+    mEndSample: 2412529
+  - mStartSample: 2438470
+    mEndSample: 2438470
+  - mStartSample: 2438471
+    mEndSample: 2438471
+  - mStartSample: 2464411
+    mEndSample: 2464411
+  - mStartSample: 2490353
+    mEndSample: 2490353
+  - mStartSample: 2516294
+    mEndSample: 2516294
   _SerializedPayloadTypes: []
   _ColorPayloads: []
   _ColorPayloadIdxs: 

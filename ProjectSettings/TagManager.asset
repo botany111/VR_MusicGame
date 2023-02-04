@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - drumstick
+  - bass drum
+  - snare drum
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,10 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     private AudioSource source;
     public string targetTag;
 
+    [Header("部位名稱")]
+    public string self;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,19 +23,41 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
         if (other.CompareTag(targetTag))
         {
             source.PlayOneShot(clip);
+
+            isSnareDrum();
         }
 
-        Debug.Log("trigger");
     }
 
 
     private void Update()
     {
+        //鍵盤測試
         if (Input.GetKeyDown(KeyCode.B))
+        {
+            if( self == "Snare Drum")
+            {
+                if (Hit.snareDrum)
+                {
+                    Destroy(Hit.G_snareDrum);
+                    
+                }
+                source.PlayOneShot(clip);
+            }
+        }
+
+    }
+
+
+
+
+    void isSnareDrum() 
+    {
+        if (self == "Snare Drum")
         {
             if (Hit.snareDrum)
             {
-                Destroy(Hit.GsnareDrum);
+                Destroy(Hit.G_snareDrum);
             }
         }
     }

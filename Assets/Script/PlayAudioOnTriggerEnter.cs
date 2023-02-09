@@ -25,6 +25,8 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             source.PlayOneShot(clip);
 
             isSnareDrum();
+            isBassDrum();
+            isHHclose();
         }
 
     }
@@ -58,6 +60,28 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             if (Hit.snareDrum)
             {
                 Destroy(Hit.G_snareDrum);
+            }
+        }
+    }
+
+    void isBassDrum()
+    {
+        if (self == "Bass Drum")
+        {
+            if (Hit.bassDrum)
+            {
+                Destroy(Hit.G_bassDrum);
+            }
+        }
+    }
+
+    void isHHclose()
+    {
+        if (self == "Bass Drum")
+        {
+            if (Hit.G_HHclose)
+            {
+                Destroy(Hit.G_HHclose);
             }
         }
     }

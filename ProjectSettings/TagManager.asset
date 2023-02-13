@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - drumstick
-  - bass drum
-  - snare drum
-  - crash
-  - floor tom
-  - HH(close)
-  - HH(open)
-  - ride
-  - tom-1
-  - tom-2
+  tags: []
   layers:
   - Default
   - TransparentFX

@@ -74,6 +74,73 @@ public class Hit : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerStay(Collider other)
+    {
+        //Snare Drum
+        if (other.CompareTag("snare drum"))
+        {
+            snareDrum = true;
+            G_snareDrum = other.gameObject;
+        }
+
+        //BassDrum
+        if (other.CompareTag("bass drum"))
+        {
+            bassDrum = true;
+            G_bassDrum = other.gameObject;
+        }
+
+        //crash
+        if (other.CompareTag("crash"))
+        {
+            crash = true;
+            G_crash = other.gameObject;
+        }
+
+        //floor tom
+        if (other.CompareTag("floor tom"))
+        {
+            flooTom = true;
+            G_flooTom = other.gameObject;
+        }
+
+        //HH(close)
+        if (other.CompareTag("HH(close)"))
+        {
+            HHclose = true;
+            G_HHclose = other.gameObject;
+        }
+
+        //HH(open)
+        if (other.CompareTag("HH(open)"))
+        {
+            HHopen = true;
+            G_HHopen = other.gameObject;
+        }
+
+        //ride
+        if (other.CompareTag("ride"))
+        {
+            ride = true;
+            G_ride = other.gameObject;
+        }
+
+        //tom-1
+        if (other.CompareTag("tom-1"))
+        {
+            tom1 = true;
+            G_tom1 = other.gameObject;
+        }
+
+        //tom-2
+        if (other.CompareTag("tom-2"))
+        {
+            tom2 = true;
+            G_tom2 = other.gameObject;
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
 

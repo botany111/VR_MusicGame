@@ -60,7 +60,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     {
         if (self == "Snare Drum")
         {
-            if (Hit.snareDrum)
+            if (Hit.G_snareDrum != null)
             {
                 Destroy(Hit.G_snareDrum);
             }

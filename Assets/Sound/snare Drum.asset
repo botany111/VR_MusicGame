@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: snare Drum
   mEventList:
-  - mStartSample: 0
-    mEndSample: 0
+  - mStartSample: -1
+    mEndSample: -1
   - mStartSample: 51882
     mEndSample: 51882
   - mStartSample: 77823

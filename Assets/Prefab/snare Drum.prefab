@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7248343105787274977}
   - component: {fileID: 7961881801324395700}
   - component: {fileID: 4196943446321390327}
+  - component: {fileID: 670769820414173637}
+  - component: {fileID: -5101588567952817911}
   m_Layer: 0
   m_Name: snare Drum
   m_TagString: snare drum
@@ -381,7 +383,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     OutputEvents: []
     RestartOnEnable: 1
@@ -409,7 +411,7 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 0
+    handleFixedUpdate: 1
     handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0
@@ -417,7 +419,36 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
+--- !u!114 &670769820414173637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6902034772555324804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -664232604, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs:
+  - {fileID: 4196943446321390327}
+--- !u!114 &-5101588567952817911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6902034772555324804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4c0685e26b29f498753707f7a82537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tag: snare drum
+  selfTf: {fileID: 0}
+  SelfGb: {fileID: 6902034772555324804}
 --- !u!1 &8928203364891039248
 GameObject:
   m_ObjectHideFlags: 0

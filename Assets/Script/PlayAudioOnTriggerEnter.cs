@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
+using UnityEngine.UI;
+
 public class PlayAudioOnTriggerEnter : MonoBehaviour
 {
     public AudioClip clip;
@@ -11,6 +13,8 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     [Header("部位名稱")]
     public string self;
+
+    
 
 
     // Start is called before the first frame update
@@ -35,6 +39,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     private void Update()
     {
+        
         //鍵盤測試
         if (Input.GetKeyDown(KeyCode.B))
         {
@@ -43,7 +48,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 if (Hit.snareDrum)
                 {
                     Destroy(Hit.G_snareDrum);
-                    
+                    addScore();
                 }
                 source.PlayOneShot(clip);
             }
@@ -63,6 +68,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             if (Hit.G_snareDrum != null)
             {
                 Destroy(Hit.G_snareDrum);
+                addScore();
             }
         }
     }
@@ -74,6 +80,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             if (Hit.bassDrum)
             {
                 Destroy(Hit.G_bassDrum);
+                addScore();
             }
         }
     }
@@ -85,7 +92,15 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             if (Hit.G_HHclose)
             {
                 Destroy(Hit.G_HHclose);
+                addScore();
             }
         }
+    }
+
+
+    void addScore()
+    {
+
+        Score.score += 1;
     }
 }

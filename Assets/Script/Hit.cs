@@ -7,8 +7,18 @@ public class Hit : MonoBehaviour
     public static bool snareDrum , bassDrum , crash , flooTom, HHclose, HHopen , ride , tom1 , tom2;
     public static GameObject G_snareDrum , G_bassDrum, G_crash, G_flooTom, G_HHclose, G_HHopen, G_ride, G_tom1, G_tom2;
 
+    public bool perfect;
+
     private void OnTriggerEnter(Collider other)
     {
+        if (perfect)
+        {
+            other.GetComponent<Perfect>().isPerfect = true;
+        }
+        else
+        {
+            other.GetComponent<Perfect>().isPerfect = false;
+        }
 
         //Snare Drum
         if (other.CompareTag("snare drum"))

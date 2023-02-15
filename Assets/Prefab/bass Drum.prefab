@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1662391310558150834}
   - component: {fileID: 1662391310558150837}
   - component: {fileID: 4899137552810269980}
+  - component: {fileID: 5409118284187916011}
   m_Layer: 0
   m_Name: bass Drum
   m_TagString: bass drum
@@ -433,6 +434,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetFSMs:
   - {fileID: 1662391310558150837}
+--- !u!114 &5409118284187916011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662391310558150836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3986e1a4f0c20c64db3ab6bccd3fb089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPerfect: 0
 --- !u!1 &1662391311137608024
 GameObject:
   m_ObjectHideFlags: 0

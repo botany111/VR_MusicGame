@@ -14,9 +14,9 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     [Header("部位名稱")]
     public string self;
 
-    public Animator animScore;
+    private Animator animScore;
 
-    public Score Score;
+    private Score Score;
     
 
 
@@ -29,6 +29,8 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //Debug.Log("123");
+
         if (other.CompareTag(targetTag))
         {
             source.PlayOneShot(clip);
@@ -52,7 +54,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 if (Hit.snareDrum)
                 {
                     Destroy(Hit.G_snareDrum);
-                    addScore();
+                   // addScore();
                 }
                 source.PlayOneShot(clip);
             }
@@ -69,10 +71,10 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     {
         if (self == "Snare Drum")
         {
-            if (Hit.G_snareDrum != null)
+            if (Hit.snareDrum)
             {
                 Destroy(Hit.G_snareDrum);
-                addScore();
+                //addScore();
             }
         }
     }
@@ -84,7 +86,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             if (Hit.bassDrum)
             {
                 Destroy(Hit.G_bassDrum);
-                addScore();
+                //addScore();
             }
         }
     }
@@ -96,24 +98,24 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             if (Hit.G_HHclose)
             {
                 Destroy(Hit.G_HHclose);
-                addScore();
+                //addScore();
             }
         }
     }
 
 
-    void addScore()
-    {
-        if (Hit.G_HHclose.GetComponent<Perfect>().isPerfect == true)
-        {
-            Score.score += 5;
-            animScore.SetTrigger("perfect");
-        }
-        else
-        {
-            Score.score += 1;
-            animScore.SetTrigger("good");
-        }
-        
-    }
+    //void addScore()
+    //{
+    //    if (Hit.G_HHclose.GetComponent<Perfect>().isPerfect == true)
+    //    {
+    //        Score.score += 5;
+    //        animScore.SetTrigger("perfect");
+    //    }
+    //    else
+    //    {
+    //        Score.score += 1;
+    //        animScore.SetTrigger("good");
+    //    }
+
+    //}
 }

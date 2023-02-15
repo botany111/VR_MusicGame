@@ -14,6 +14,9 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     [Header("部位名稱")]
     public string self;
 
+    public Animator animScore;
+
+    public Score Score;
     
 
 
@@ -21,6 +24,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     void Start()
     {
         source = GetComponent<AudioSource>();
+        animScore = GameObject.FindGameObjectWithTag("Score").GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -103,10 +107,12 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
         if (Hit.G_HHclose.GetComponent<Perfect>().isPerfect == true)
         {
             Score.score += 5;
+            animScore.SetTrigger("perfect");
         }
         else
         {
             Score.score += 1;
+            animScore.SetTrigger("good");
         }
         
     }

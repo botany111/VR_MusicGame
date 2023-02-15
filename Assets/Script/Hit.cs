@@ -15,10 +15,6 @@ public class Hit : MonoBehaviour
         {
             other.GetComponent<Perfect>().isPerfect = true;
         }
-        else
-        {
-            other.GetComponent<Perfect>().isPerfect = false;
-        }
 
         //Snare Drum
         if (other.CompareTag("snare drum"))
@@ -153,6 +149,10 @@ public class Hit : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (perfect)
+        {
+            other.GetComponent<Perfect>().isPerfect = false;
+        }
 
         //Snare Drum
         snareDrum = false;

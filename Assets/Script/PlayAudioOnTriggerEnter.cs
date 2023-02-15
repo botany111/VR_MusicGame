@@ -100,7 +100,14 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     void addScore()
     {
-
-        Score.score += 1;
+        if (Hit.G_HHclose.GetComponent<Perfect>().isPerfect == true)
+        {
+            Score.score += 5;
+        }
+        else
+        {
+            Score.score += 1;
+        }
+        
     }
 }

@@ -7,16 +7,10 @@ public class FixSpawn : MonoBehaviour
 
     public string Tag;
 
-    public Transform selfTf;
-
-    public GameObject SelfGb;
-
-    private bool fix = false;
 
 
     private void Update()
     {
-        selfTf = GetComponent<Transform>();
 
         //Debug.Log(selfTf.position.y);
     }
@@ -24,7 +18,7 @@ public class FixSpawn : MonoBehaviour
     {
         if (other.CompareTag(Tag))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
             Debug.Log("fix");
         }

@@ -51,30 +51,45 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
         {
             if( self == "Snare Drum")
             {
-                if (Hit.snareDrum)
+                if (HitRing.snareDrum == true)
                 {
-                    Destroy(Hit.G_snareDrum);
-                   // addScore();
+                   Destroy(HitRing.G_snareDrum);
+                   addScore();
+
+                    Debug.Log("y");
                 }
                 source.PlayOneShot(clip);
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            if (self == "HH")
+            {
+                if (HitRing.snareDrum == true)
+                {
+                    Destroy(HitRing.G_snareDrum);
+                    addScore();
 
-        
+                    //Debug.Log("y");
+                }
+                source.PlayOneShot(clip);
+            }
+        }
+
     }
 
 
 
 
-    void isSnareDrum() 
+    void isSnareDrum()
     {
         if (self == "Snare Drum")
         {
-            if (Hit.snareDrum)
+            if (HitRing.G_snareDrum != null)
             {
-                Destroy(Hit.G_snareDrum);
-                //addScore();
+                Destroy(HitRing.G_snareDrum);
+                addScore();
             }
         }
     }
@@ -83,39 +98,41 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
     {
         if (self == "Bass Drum")
         {
-            if (Hit.bassDrum)
+            if (HitRing.G_bassDrum != null)
             {
-                Destroy(Hit.G_bassDrum);
-                //addScore();
+                Destroy(HitRing.G_bassDrum);
+                addScore();
             }
         }
     }
 
     void isHHclose()
     {
-        if (self == "Bass Drum")
+        if (self == "HH")
         {
-            if (Hit.G_HHclose)
+            if (HitRing.G_HHclose != null)
             {
-                Destroy(Hit.G_HHclose);
-                //addScore();
+                Destroy(HitRing.G_HHclose);
+                addScore();
             }
         }
     }
 
 
-    //void addScore()
-    //{
-    //    if (Hit.G_HHclose.GetComponent<Perfect>().isPerfect == true)
-    //    {
-    //        Score.score += 5;
-    //        animScore.SetTrigger("perfect");
-    //    }
-    //    else
-    //    {
-    //        Score.score += 1;
-    //        animScore.SetTrigger("good");
-    //    }
+    void addScore()
+    {
+        if (HitRing.G_snareDrum.GetComponent<ripple>().status == ripple.Status.perfect)
+        {
+            Score.score += 5;
+            animScore.SetTrigger("perfect");
+        }
+        else
+        {
+            Score.score += 1;
+            animScore.SetTrigger("good");
+        }
 
-    //}
+    }
+
+
 }

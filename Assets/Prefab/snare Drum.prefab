@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4196943446321390327}
   - component: {fileID: 670769820414173637}
   - component: {fileID: -5101588567952817911}
+  - component: {fileID: 5576190818391366010}
   m_Layer: 0
   m_Name: snare Drum
   m_TagString: snare drum
@@ -449,6 +450,19 @@ MonoBehaviour:
   Tag: snare drum
   selfTf: {fileID: 0}
   SelfGb: {fileID: 6902034772555324804}
+--- !u!114 &5576190818391366010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6902034772555324804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3986e1a4f0c20c64db3ab6bccd3fb089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPerfect: 0
 --- !u!1 &8928203364891039248
 GameObject:
   m_ObjectHideFlags: 0

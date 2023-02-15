@@ -11,6 +11,8 @@ public class Hit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //Debug.Log("test");
+
         if (perfect)
         {
             other.GetComponent<Perfect>().isPerfect = true;

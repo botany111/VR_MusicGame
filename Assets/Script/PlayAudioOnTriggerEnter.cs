@@ -72,8 +72,6 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 {
                    Destroy(HitRing.G_snareDrum);
                    addScore();
-
-                    Debug.Log("y");
                 }
 
                 anim.SetTrigger("hit");
@@ -85,12 +83,10 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
         {
             if (self == "HH")
             {
-                if (HitRing.snareDrum == true)
+                if (HitRing.HHclose == true)
                 {
-                    Destroy(HitRing.G_snareDrum);
+                    Destroy(HitRing.G_HHclose);
                     addScore();
-
-                    //Debug.Log("y");
                 }
                 source.PlayOneShot(clip);
                 anim.SetTrigger("hit");
@@ -144,18 +140,48 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     void addScore()
     {
-        //if (HitRing.G_snareDrum.GetComponent<ripple>().status == ripple.Status.perfect)
-        //{
-        //    Score.score += 5;
-        //    animScore.SetTrigger("perfect");
-        //}
-        //else
-        //{
-        //    Score.score += 1;
-        //    animScore.SetTrigger("good");
-        //}
+        if(HitRing.G_snareDrum != null)
+        {
+            if (HitRing.G_snareDrum.GetComponent<ripple>().status == ripple.Status.perfect)
+            {
+                Score.score += 2;
+                animScore.SetTrigger("perfect");
+            }
+            else
+            {
+                Score.score += 1;
+                animScore.SetTrigger("good");
+            }
+        }
 
-        Score.score += 5;
+        if (HitRing.G_HHclose != null)
+        {
+            if (HitRing.G_HHclose.GetComponent<ripple>().status == ripple.Status.perfect)
+            {
+                Score.score += 2;
+                animScore.SetTrigger("perfect");
+            }
+            else
+            {
+                Score.score += 1;
+                animScore.SetTrigger("good");
+            }
+        }
+
+        if (HitRing.G_bassDrum != null)
+        {
+            if (HitRing.G_bassDrum.GetComponent<ripple>().status == ripple.Status.perfect)
+            {
+                Score.score += 2;
+                animScore.SetTrigger("perfect");
+            }
+            else
+            {
+                Score.score += 1;
+                animScore.SetTrigger("good");
+            }
+        }
+
 
     }
 

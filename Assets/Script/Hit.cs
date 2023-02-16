@@ -17,7 +17,7 @@ public class Hit : MonoBehaviour
 
         if (perfect)
         {
-            other.GetComponent<Perfect>().isPerfect = true;
+           // other.GetComponent<Perfect>().isPerfect = true;
         }
 
         //Snare Drum
@@ -155,7 +155,7 @@ public class Hit : MonoBehaviour
     {
         if (perfect)
         {
-            other.GetComponent<Perfect>().isPerfect = false;
+          //  other.GetComponent<Perfect>().isPerfect = false;
         }
 
         //Snare Drum

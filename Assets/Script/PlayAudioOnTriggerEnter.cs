@@ -23,6 +23,11 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     public Animator anim;
 
+    public GameObject prefect;
+    public GameObject good;
+    public Transform spawn;
+
+
 
     // private Score Score;
 
@@ -70,8 +75,10 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             {
                 if (HitRing.snareDrum == true)
                 {
-                   Destroy(HitRing.G_snareDrum);
-                   addScore();
+                    
+                    addScore();
+                    Destroy(HitRing.G_snareDrum);
+                   
                 }
 
                 anim.SetTrigger("hit");
@@ -85,8 +92,9 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             {
                 if (HitRing.HHclose == true)
                 {
-                    Destroy(HitRing.G_HHclose);
                     addScore();
+                    Destroy(HitRing.G_HHclose);
+                    
                 }
                 source.PlayOneShot(clip);
                 anim.SetTrigger("hit");
@@ -104,8 +112,9 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
         {
             if (HitRing.G_snareDrum != null)
             {
-                Destroy(HitRing.G_snareDrum);
                 addScore();
+                Destroy(HitRing.G_snareDrum);
+                
             }
             anim.SetTrigger("hit");
         }
@@ -146,11 +155,13 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             {
                 Score.score += 2;
                 animScore.SetTrigger("perfect");
+                Instantiate(prefect, spawn);
             }
             else
             {
                 Score.score += 1;
                 animScore.SetTrigger("good");
+                Instantiate(good, spawn);
             }
         }
 

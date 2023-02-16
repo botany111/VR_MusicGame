@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Perfect : MonoBehaviour
 {
-    public bool isPerfect;
+    public void OnDestroy()
+    {
+        Destroy(gameObject);
+    }
 
-    
+
 }

@@ -7,10 +7,8 @@ public class HitRing : MonoBehaviour
     public static bool snareDrum, bassDrum, crash, flooTom, HHclose, HHopen, ride, tom1, tom2;
     public static GameObject G_snareDrum, G_bassDrum, G_crash, G_flooTom, G_HHclose, G_HHopen, G_ride, G_tom1, G_tom2;
 
-    public GameObject test;
-    public bool test1;
 
-    public GameObject self;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +16,9 @@ public class HitRing : MonoBehaviour
         if (other.CompareTag("snare drum"))
         {
             snareDrum = true;
-            G_snareDrum = other.gameObject;      
+            G_snareDrum = other.gameObject;
+
+            
 
         }
 
@@ -46,8 +46,6 @@ public class HitRing : MonoBehaviour
 
     private void Update()
     {
-        test = G_HHclose;
-        test1 = HHclose;
     }
 
 

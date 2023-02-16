@@ -125,6 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   test: {fileID: 0}
   test1: 0
+  self: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &4834442741446690090
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +138,7 @@ GameObject:
   - component: {fileID: 4834442741446690067}
   - component: {fileID: 4834442741446690068}
   - component: {fileID: 4834442741446690069}
-  - component: {fileID: 4834442741446690070}
+  - component: {fileID: 7507944353650336111}
   m_Layer: 0
   m_Name: HitRing
   m_TagString: Untagged
@@ -206,7 +208,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &4834442741446690070
+--- !u!95 &7507944353650336111
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -214,9 +216,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4834442741446690090}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f89d73fceae48e243a2e66edf9db858d, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

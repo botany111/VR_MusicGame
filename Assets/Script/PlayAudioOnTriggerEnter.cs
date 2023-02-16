@@ -20,7 +20,9 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     private SteamVR_TrackedObject trackedObj;
     private SteamVR_Controller.Device device;
-    
+
+    public Animator anim;
+
 
     // private Score Score;
 
@@ -73,6 +75,8 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
                     Debug.Log("y");
                 }
+
+                anim.SetTrigger("hit");
                 source.PlayOneShot(clip);
             }
         }
@@ -84,9 +88,9 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 if (HitRing.snareDrum == true)
                 {
                     Destroy(HitRing.G_snareDrum);
-                    addScore();
+                   // addScore();
 
-                    //Debug.Log("y");
+                    Debug.Log("y");
                 }
                 source.PlayOneShot(clip);
             }
@@ -106,6 +110,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 Destroy(HitRing.G_snareDrum);
                 addScore();
             }
+            anim.SetTrigger("hit");
         }
     }
 
@@ -118,6 +123,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 Destroy(HitRing.G_bassDrum);
                 addScore();
             }
+            anim.SetTrigger("hit");
         }
     }
 
@@ -130,6 +136,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 Destroy(HitRing.G_HHclose);
                 addScore();
             }
+            anim.SetTrigger("hit");
         }
     }
 

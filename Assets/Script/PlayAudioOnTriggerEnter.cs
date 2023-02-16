@@ -88,11 +88,12 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
                 if (HitRing.snareDrum == true)
                 {
                     Destroy(HitRing.G_snareDrum);
-                   // addScore();
+                    addScore();
 
-                    Debug.Log("y");
+                    //Debug.Log("y");
                 }
                 source.PlayOneShot(clip);
+                anim.SetTrigger("hit");
             }
         }
 
@@ -143,16 +144,18 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     void addScore()
     {
-        if (HitRing.G_snareDrum.GetComponent<ripple>().status == ripple.Status.perfect)
-        {
-            Score.score += 5;
-            animScore.SetTrigger("perfect");
-        }
-        else
-        {
-            Score.score += 1;
-            animScore.SetTrigger("good");
-        }
+        //if (HitRing.G_snareDrum.GetComponent<ripple>().status == ripple.Status.perfect)
+        //{
+        //    Score.score += 5;
+        //    animScore.SetTrigger("perfect");
+        //}
+        //else
+        //{
+        //    Score.score += 1;
+        //    animScore.SetTrigger("good");
+        //}
+
+        Score.score += 5;
 
     }
 

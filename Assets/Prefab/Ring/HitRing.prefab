@@ -123,10 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9c42b7a0cb5f541868da945e76e302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 0}
-  test1: 0
-  self: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!1 &4834442741446690090
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 4834442741446690090}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.38, y: 0.38, z: 0.38}
   m_Children:
   - {fileID: 4834442741223354213}
   m_Father: {fileID: 0}
@@ -218,7 +214,7 @@ Animator:
   m_GameObject: {fileID: 4834442741446690090}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0ed39a782b15b14b8a4b3328b3273b2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

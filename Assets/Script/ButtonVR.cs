@@ -44,6 +44,7 @@ public class ButtonVR : MonoBehaviour
     public void StartGame()
     {
         gm.SetActive(false);
+        Score.score = 0;
         gm.SetActive(true);
     }
 }

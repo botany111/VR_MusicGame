@@ -34,7 +34,6 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
 
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -149,49 +148,66 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     void addScore()
     {
-        if(HitRing.G_snareDrum != null)
+
+        if (self == "Snare Drum")
         {
-            if (HitRing.G_snareDrum.GetComponent<ripple>().status == ripple.Status.perfect)
+            if (HitRing.G_snareDrum != null)
             {
-                Score.score += 2;
-                animScore.SetTrigger("perfect");
-                Instantiate(prefect, spawn);
+                if (HitRing.G_snareDrum.GetComponent<ripple>().status == ripple.Status.perfect)
+                {
+                    Score.score += 2;
+                    animScore.SetTrigger("perfect");
+                    Instantiate(prefect, spawn);
+                }
+                else
+                {
+                    Score.score += 1;
+                    animScore.SetTrigger("good");
+                    Instantiate(good, spawn);
+                }
             }
-            else
+        }
+            
+
+        if (self == "HH")
+        {
+            if (HitRing.G_HHclose != null)
             {
-                Score.score += 1;
-                animScore.SetTrigger("good");
-                Instantiate(good, spawn);
+                if (HitRing.G_HHclose.GetComponent<ripple>().status == ripple.Status.perfect)
+                {
+                    Score.score += 2;
+                    animScore.SetTrigger("perfect");
+                    Instantiate(prefect, spawn);
+                }
+                else
+                {
+                    Score.score += 1;
+                    animScore.SetTrigger("good");
+                    Instantiate(good, spawn);
+                }
             }
         }
 
-        if (HitRing.G_HHclose != null)
+        if (self == "Bass Drum")
         {
-            if (HitRing.G_HHclose.GetComponent<ripple>().status == ripple.Status.perfect)
+            if (HitRing.G_bassDrum != null)
             {
-                Score.score += 2;
-                animScore.SetTrigger("perfect");
-            }
-            else
-            {
-                Score.score += 1;
-                animScore.SetTrigger("good");
+                if (HitRing.G_bassDrum.GetComponent<ripple>().status == ripple.Status.perfect)
+                {
+                    Score.score += 2;
+                    animScore.SetTrigger("perfect");
+                    Instantiate(prefect, spawn);
+                }
+                else
+                {
+                    Score.score += 1;
+                    animScore.SetTrigger("good");
+                    Instantiate(good, spawn);
+                }
             }
         }
 
-        if (HitRing.G_bassDrum != null)
-        {
-            if (HitRing.G_bassDrum.GetComponent<ripple>().status == ripple.Status.perfect)
-            {
-                Score.score += 2;
-                animScore.SetTrigger("perfect");
-            }
-            else
-            {
-                Score.score += 1;
-                animScore.SetTrigger("good");
-            }
-        }
+            
 
 
     }
